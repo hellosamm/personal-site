@@ -1,0 +1,26 @@
+.articleCard {
+  margin-bottom: 5rem;
+}
+
+.articleCard p {
+  margin-bottom: 1rem;
+}
+
+.articleCard a {
+  /* color: #0058cc; */
+
+  text-decoration: underline;
+}
+
+.title {
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.date {
+}
+
+.body {
+}
