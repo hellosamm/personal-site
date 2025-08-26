@@ -17,17 +17,26 @@ export default function Home() {
           </p>
           <p>
             I am energized by starting new projects and love to share what I
-            know with others. Let’s make some magic ✨
+            know with others. Let’s make some magic!
           </p>
         </div>
         <div className={style.section}>
           <h3>CURRENTLY MAKING</h3>
-          <Link href="/this-week-I-made">this week I made</Link>
+          <p>
+            <Link href="/this-week-I-made" className={style.link}>
+              this week I made
+            </Link>
+          </p>
         </div>
 
         <div className={style.section}>
           <h3>THINKING ABOUT</h3>
-          <Link href="/on-my-mind">random things on my mind</Link>
+          <p>
+            random things{" "}
+            <Link href="/on-my-mind" className={style.link}>
+              on my mind
+            </Link>
+          </p>
         </div>
 
         <div className={style.section}>
@@ -40,7 +49,16 @@ export default function Home() {
 
         <div>
           <h3>CONTACT</h3>
-          <p>here's where you can find me</p>
+          <p>
+            here's where you can{" "}
+            <a
+              href="https://www.linkedin.com/in/samm-bakerr/"
+              target="_blank"
+              className={style.link}
+            >
+              find me
+            </a>
+          </p>
         </div>
       </main>
       <footer></footer>
