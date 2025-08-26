@@ -21,7 +21,7 @@ const ThisWeekIMade = async () => {
         {posts.map((post) => (
           <article key={post.slug} className={style.articleCard}>
             <div className={style.header}>
-              <h2>{post.title}</h2>
+              <h2 className={style.h2}>{post.title}</h2>
               <time dateTime={post.date}>{formatDate(post.date)}</time>
             </div>
             <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
