@@ -1,0 +1,37 @@
+import React from "react";
+import Link from "next/link";
+
+const CodingBtn = () => {
+  return (
+    <div>
+      <Link href="/coding-projects">
+        <svg
+          width="395"
+          height="395"
+          viewBox="0 0 395 395"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="transition-transform duration-300 hover:scale-110 hover:-rotate-6"
+        >
+          <path
+            d="M234.472 0.438303L246.928 94.4566L328.05 45.3256L291.828 132.976L386.646 130.988L311.452 188.784L394.562 234.472L300.543 246.928L349.674 328.05L262.024 291.828L264.012 386.646L206.216 311.452L160.528 394.562L148.072 300.543L66.9504 349.674L103.172 262.024L8.35353 264.012L83.5478 206.216L0.438292 160.528L94.4566 148.072L45.3256 66.9504L132.976 103.172L130.988 8.35354L188.784 83.5479L234.472 0.438303Z"
+            fill="#A3B128"
+          />
+          <text
+            x="197.5"
+            y="197.5"
+            textAnchor="middle"
+            dominantBaseline="middle"
+            fill="black"
+            fontSize="25"
+            fontWeight="600"
+          >
+            CODING
+          </text>
+        </svg>
+      </Link>
+    </div>
+  );
+};
+
+export default CodingBtn;

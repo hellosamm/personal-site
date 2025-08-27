@@ -26,6 +26,27 @@
 }
 
 .h2 {
-  /* font-family: knewave;
-  font-size: 1.5rem; */
+  position: absolute;
+  font-family: knewave;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.circle {
+  width: 250px;
+  z-index: 0;
+}
+
+.side-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scaledSvg {
+  width: 200px;
+}
+
+.svgText {
+  font-size: 30px;
 }
