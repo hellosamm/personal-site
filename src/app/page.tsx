@@ -2,12 +2,15 @@ import { Knewave } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import style from "./styles/Homepage.module.css";
+import CodingBtn from "./components/CodingBtn";
+import OnMyMindBtn from "./components/OnMyMindBtn";
+import ContactBtn from "./components/ContactBtn";
 
 export default function Home() {
   return (
     <div className="container">
       <div className="sidebar"></div>
-      <main className="main">
+      <main className={style.main}>
         <div className={style.about}>
           <p>hi, I'm sam</p>
           <p>
@@ -20,45 +23,20 @@ export default function Home() {
             know with others. Let’s make some magic!
           </p>
         </div>
-        <div className={style.section}>
-          <h3>CURRENTLY MAKING</h3>
-          <p>
-            <Link href="/this-week-I-made" className={style.link}>
-              this week I made
-            </Link>
-          </p>
-        </div>
-
-        <div className={style.section}>
-          <h3>THINKING ABOUT</h3>
-          <p>
-            random things{" "}
-            <Link href="/on-my-mind" className={style.link}>
-              on my mind
-            </Link>
-          </p>
-        </div>
-
-        <div className={style.section}>
-          <h3>THINGS I'VE MADE</h3>
-          <p>
-            a mix of side projects, creative experiments and things I do after
-            work
-          </p>
-        </div>
-
-        <div>
-          <h3>CONTACT</h3>
-          <p>
-            here's where you can{" "}
-            <a
-              href="https://www.linkedin.com/in/samm-bakerr/"
-              target="_blank"
-              className={style.link}
-            >
-              find me
-            </a>
-          </p>
+        <div className={style.btnContainer}>
+          <div className={style.codingBtn}>
+            <CodingBtn />
+          </div>
+          <div className={style.ommBtn}>
+            <OnMyMindBtn />
+          </div>
+          <div className={style.contactBtn}>
+            <ContactBtn />
+          </div>
+          {/* <div className={style.section}>
+            <h3>THINGS I'VE MADE</h3>
+            <img src="./red-flower.svg" alt="" />
+          </div> */}
         </div>
       </main>
       <footer></footer>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Knewave, Lato } from "next/font/google";
+import { Knewave, Lato, Outfit } from "next/font/google";
 import "./globals.css";
 import SamBakerLogo from "./components/SamBakerLogo";
 
@@ -12,6 +12,12 @@ const lato = Lato({
 const knewave = Knewave({
   weight: ["400"],
   variable: "--font-knewave",
+  subsets: ["latin"],
+});
+
+const outfit = Outfit({
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-outfit",
   subsets: ["latin"],
 });
 
@@ -32,7 +38,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.variable} ${knewave.variable} antialiased`}>
+      <body
+        className={`${lato.variable} ${knewave.variable} ${outfit.variable} antialiased`}
+      >
         <SamBakerLogo />
         {children}
       </body>
