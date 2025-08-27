@@ -42,22 +42,34 @@
   align-items: ;
 }
 
+.btnContainer {
+  max-width: 800px;
+
+  position: relative;
+}
+
 .codingBtn {
   position: absolute;
-  top: 35%;
-  left: 10%;
+  top: 50px;
+  left: -100px;
 }
 
 .ommBtn {
   position: absolute;
-  top: 35%;
-  left: 50%;
+  top: 0px;
+  left: 400px;
 }
 
 .contactBtn {
   position: absolute;
-  top: 60%;
-  left: 35%;
+  top: 300px;
+  left: 200px;
+}
+
+@media (min-width: 1024px) {
+  .btnContainer {
+    margin-left: 18rem;
+  }
 }
 
 @media (max-width: 1023px) {
