@@ -12,15 +12,15 @@ export default function Home() {
       <div className="sidebar"></div>
       <main className={style.main}>
         <div className={style.about}>
-          <p>hi, I'm sam</p>
+          <p>{`hi, I'm sam`}</p>
           <p>
-            I believe we are all born to create. Whether it’s drawing, cooking,
+            {`I believe we are all born to create. Whether it’s drawing, cooking,
             coding or simply the way we move through the world, making things
-            keeps us curious and alive.
+            keeps us curious and alive.`}
           </p>
           <p>
-            I am energized by starting new projects and love to share what I
-            know with others. Let’s make some magic!
+            {`I am energized by starting new projects and love to share what I
+            know with others. Let’s make some magic!`}
           </p>
         </div>
         <div className={style.btnContainer}>
