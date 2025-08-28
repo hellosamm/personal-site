@@ -19,6 +19,7 @@
 
 .title {
   margin: 0;
+  font-size: 55px;
 }
 
 .details {
@@ -31,4 +32,22 @@
 .projectRow.expanded .details {
   opacity: 1;
   max-height: 500px; /* enough to show content */
+}
+
+.languagesContainer {
+  display: flex;
+  flex-wrap: wrap; /* so tags wrap to next line if needed */
+  gap: 0.5rem; /* space between tags */
+  margin-top: 0.5rem;
+}
+
+.languageTag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem; /* vertical and horizontal padding */
+  border-radius: 999px; /* fully rounded edges */
+  color: white; /* text color */
+  font-size: 1rem; /* adjust to taste */
+  font-weight: 500;
+  cursor: default;
+  white-space: nowrap; /* prevent wrapping inside a tag */
 }
