@@ -11,6 +11,7 @@ const OnMyMindBtn = () => {
           viewBox="0 0 422 219"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="transition-transform duration-200 hover:rotate-3"
         >
           <ellipse
             cx="211"
@@ -18,7 +19,7 @@ const OnMyMindBtn = () => {
             rx="109.5"
             ry="211"
             transform="rotate(-90 211 109.5)"
-            fill="#FA5B9B"
+            fill="#ED92FB"
           />
           <text
             x="211"

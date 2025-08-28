@@ -14,9 +14,7 @@ const CodingProjects = async () => {
 
   return (
     <div className="">
-      <div className="">
-        <h2>projects</h2>
-      </div>
+      <div className=""></div>
       <div className="">
         <div>
           {/* <p>Rails</p>
