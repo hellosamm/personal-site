@@ -22,6 +22,7 @@ export default function Home() {
             {`I am energized by starting new projects and love to share what I
             know with others. Let’s make some magic!`}
           </p>
+          <img src="/zigzag.svg" alt="" className={style.drawnLine} />
         </div>
         {/* <div className={style.btnContainer}>
           <div className={style.codingBtn}>
