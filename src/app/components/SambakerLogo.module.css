@@ -60,19 +60,23 @@
   }
 }
 
-/* Responsive adjustments */
-/* @media (max-width: 768px) {
-  .logoText {
-    font-size: 3rem;
-  }
+.fullContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
 
-  .star {
-    width: 16px;
-    height: 16px;
-  }
+.menu {
+  display: flex;
+  gap: 6rem;
+}
 
-  .fourPointStar {
-    width: 12px;
-    height: 12px;
-  }
-} */
+.menu a {
+  white-space: nowrap;
+  font-size: 1.2rem;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}

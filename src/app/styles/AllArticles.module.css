@@ -1,5 +1,5 @@
 .articleCard {
-  margin-bottom: 5rem;
+  /* margin-bottom: 8rem; */
 }
 
 .articleCard p {
@@ -12,7 +12,10 @@
   text-decoration: underline;
 }
 
-.title {
+.main {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .header {
@@ -49,4 +52,10 @@
 
 .svgText {
   font-size: 30px;
+}
+
+.drawnLine {
+  width: 50%;
+  height: auto;
+  margin: 4rem 0 4rem 0;
 }

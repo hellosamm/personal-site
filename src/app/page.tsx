@@ -22,8 +22,9 @@ export default function Home() {
             {`I am energized by starting new projects and love to share what I
             know with others. Let’s make some magic!`}
           </p>
+          {/* <img src="/zigzag.svg" alt="" className={style.drawnLine} /> */}
         </div>
-        <div className={style.btnContainer}>
+        {/* <div className={style.btnContainer}>
           <div className={style.codingBtn}>
             <CodingBtn />
           </div>
@@ -33,11 +34,11 @@ export default function Home() {
           <div className={style.contactBtn}>
             <ContactBtn />
           </div>
-          {/* <div className={style.section}>
+          <div className={style.section}>
             <h3>THINGS I'VE MADE</h3>
             <img src="./red-flower.svg" alt="" />
-          </div> */}
-        </div>
+          </div>
+        </div> */}
       </main>
       <footer></footer>
     </div>
