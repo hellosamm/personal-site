@@ -27,20 +27,20 @@ export default function Home() {
             <h2>Most Recent</h2>
             <p>
               my latest{" "}
-              <a href="/coding-projects" className={style.link}>
+              <Link href="/coding-projects" className={style.link}>
                 coding projects
-              </a>
+              </Link>
             </p>
 
             <h2>Thinking About</h2>
             <p>
               random things{" "}
-              <a href="/coding-projects" className={style.link}>
+              <Link href="/coding-projects" className={style.link}>
                 on my mind
-              </a>
+              </Link>
             </p>
 
-            <h2>What I'm Doing</h2>
+            <h2>{`What I'm Doing`}</h2>
             <ul>OUTDOORS → training for a marathon</ul>
             <ul>MAKING → a quilt</ul>
             <ul>COOKING → homemade ice cream & pizza on the grill</ul>
