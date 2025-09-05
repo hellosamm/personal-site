@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Knewave, Lato, Outfit } from "next/font/google";
 import "./globals.css";
 import SamBakerLogo from "./components/SamBakerLogo";
+import Footer from "./components/Footer";
 
 const lato = Lato({
   weight: ["300", "400", "700"],
@@ -41,8 +42,13 @@ export default function RootLayout({
       <body
         className={`${lato.variable} ${knewave.variable} ${outfit.variable} antialiased`}
       >
-        <SamBakerLogo />
-        {children}
+        <div className="layout">
+          <SamBakerLogo />
+          <main> {children}</main>
+          <div className="footer">
+            <Footer />
+          </div>
+        </div>
       </body>
     </html>
   );

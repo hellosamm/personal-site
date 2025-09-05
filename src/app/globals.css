@@ -48,3 +48,20 @@ article ul,
   padding-left: 1.5rem;
   margin: 1rem 0;
 }
+
+.footer {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: start;
+  font-size: 0.9rem;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout main {
+  flex: 1; /* pushes footer to bottom */
+}
