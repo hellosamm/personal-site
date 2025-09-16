@@ -3,6 +3,7 @@ import { Knewave, Lato, Outfit } from "next/font/google";
 import "./globals.css";
 import SamBakerLogo from "./components/SamBakerLogo";
 import Footer from "./components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const lato = Lato({
   weight: ["300", "400", "700"],
@@ -49,6 +50,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </div>
+        <Analytics />
       </body>
     </html>
   );
