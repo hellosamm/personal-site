@@ -42,8 +42,8 @@ export default function Home() {
 
             <h2>{`What I'm Doing`}</h2>
             <ul>OUTDOORS → training for a marathon</ul>
-            <ul>MAKING → a quilt</ul>
-            <ul>COOKING → homemade ice cream & pizza on the grill</ul>
+            <ul>MAKING → sewing a quilt</ul>
+            <ul>COOKING → homemade pizza on the grill</ul>
           </div>
           <img src="/zigzag.svg" alt="" className={style.drawnLine} />
         </div>
