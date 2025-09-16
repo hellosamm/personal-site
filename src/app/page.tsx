@@ -35,7 +35,7 @@ export default function Home() {
             <h2>Thinking About</h2>
             <p>
               random things{" "}
-              <Link href="/coding-projects" className={style.link}>
+              <Link href="/on-my-mind" className={style.link}>
                 on my mind
               </Link>
             </p>
