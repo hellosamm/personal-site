@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "./Projects.module.css";
+import styles from "../styles/Projects.module.css";
 import React from "react";
 
 // const Projects = () => {

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "./SambakerLogo.module.css";
+import styles from "../styles/SambakerLogo.module.css";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -51,9 +51,7 @@ const SamBakerLogo: React.FC = () => {
       <div className={styles.menu}>
         <Link href="/coding-projects">coding</Link>
         <Link href="/on-my-mind">on my mind</Link>
-        <a href="https://www.linkedin.com/in/samm-bakerr/" target="_blank">
-          contact
-        </a>
+        <Link href="/contact">contact</Link>
       </div>
     </div>
   );
