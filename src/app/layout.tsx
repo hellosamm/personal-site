@@ -25,7 +25,7 @@ const knewave = Knewave({
 });
 
 const outfit = Outfit({
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-outfit",
   subsets: ["latin"],
 });
