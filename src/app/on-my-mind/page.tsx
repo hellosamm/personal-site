@@ -30,11 +30,16 @@ const OnMyMind = async () => {
         {posts.map((post) => (
           <article key={post.slug} className={style.articleCard}>
             <div className={style.header}>
-              <h2>{post.title}</h2>
-              <time dateTime={post.date}>{formatDate(post.date)}</time>
+              <h2 className={style.title}>{post.title}</h2>
+              <time dateTime={post.date} className={style.date}>
+                {formatDate(post.date)}
+              </time>
             </div>
-            <div dangerouslySetInnerHTML={{ __html: post.contentHtml }}></div>
-            <img src="/zigzag.svg" alt="" className={style.drawnLine} />
+            <div
+              className={style.body}
+              dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+            ></div>
+            {/* <img src="/zigzag.svg" alt="" className={style.drawnLine} /> */}
           </article>
         ))}
       </div>

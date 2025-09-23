@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "../styles/Projects.module.css";
+import style from "../styles/Projects.module.css";
 import React from "react";
 
 // const Projects = () => {
@@ -173,9 +173,9 @@ const Projects = () => {
       ],
       github: "https://github.com/hellosamm/cbc-v2",
       deployed: "https://cbc-v2.onrender.com",
-      bgColor: "#E7ADF0",
-      titleColor: "#9B0FB1",
-      languageColor: "#9B0FB1",
+      bgColor: "#89a120",
+      titleColor: "#000000",
+      languageColor: "#89a120",
     },
     {
       title: "PERSONAL SITE",
@@ -185,8 +185,8 @@ const Projects = () => {
       deployed: "https://www.sammbakerr.com/",
       btnText: "You Are Here",
       bgColor: "#B8E7F6",
-      titleColor: "#1546A9",
-      languageColor: "#1546A9",
+      titleColor: "#000000",
+      languageColor: "#89a120",
     },
 
     {
@@ -197,8 +197,8 @@ const Projects = () => {
       github: "https://github.com/hellosamm/ingredient_finder",
       deployed: "",
       bgColor: "#FFFDBA",
-      titleColor: "#F23",
-      languageColor: "#F23",
+      titleColor: "#000000",
+      languageColor: "#89a120",
     },
   ];
 
@@ -207,25 +207,39 @@ const Projects = () => {
   };
 
   return (
-    <div className={styles.projectsContainer}>
+    <div className={style.projectsContainer}>
       {projects.map((project, index) => (
-        <div key={index} className={styles.projectCard}>
-          <div className={styles.title}>{project.title}</div>
-          <div className={styles.languagesContainer}>
+        <div
+          key={index}
+          className={style.projectCard}
+          style={{
+            "--border-color": project.s,
+            "--shadow-color": project.titleColor,
+          }}
+        >
+          <div
+            className={style.title}
+            style={{
+              color: project.titleColor,
+            }}
+          >
+            {project.title}
+          </div>
+          <div className={style.languagesContainer}>
             {project.languages.map((lang, index) => (
-              <div key={index} className={styles.languageTag}>
+              <div key={index} className={style.languageTag}>
                 {lang}
               </div>
             ))}
           </div>{" "}
           {project.description.split("\n").map((line, index) => (
-            <span key={index}>
+            <div key={index}>
               {line}
               <br />
-            </span>
+            </div>
           ))}
-          <div className={styles.allBtns}>
-            <a href={project.github} target="_blank" className={styles.btn}>
+          <div className={style.allBtns}>
+            <a href={project.github} target="_blank" className={style.btn}>
               Github
             </a>
             {project.deployed && (
@@ -233,7 +247,7 @@ const Projects = () => {
                 href={project.deployed}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.btn}
+                className={style.btn}
               >
                 {project.btnText || "Deployed Here"}
               </a>

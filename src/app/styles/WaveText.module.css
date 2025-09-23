@@ -1,5 +1,5 @@
 .waveText {
-  font-size: 4rem;
+  font-size: 8rem;
   font-weight: bold;
   color: black;
   /* text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
@@ -9,7 +9,7 @@
 
 .letter {
   display: inline-block;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: center bottom;
   position: relative;
 }

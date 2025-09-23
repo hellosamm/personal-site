@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Knewave, Lato, Outfit } from "next/font/google";
+import { Knewave, Lato, Outfit, Space_Mono } from "next/font/google";
 import "./globals.css";
 import SamBakerLogo from "./components/SamBakerLogo";
 import Footer from "./components/Footer";
@@ -23,6 +23,12 @@ const outfit = Outfit({
   subsets: ["latin"],
 });
 
+const space_mono = Space_Mono({
+  weight: ["400", "700"],
+  variable: "--font-spacemono",
+  subsets: ["latin"],
+});
+
 // const geistMono = Geist_Mono({
 //   variable: "--font-geist-mono",
 //   subsets: ["latin"],
@@ -41,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lato.variable} ${knewave.variable} ${outfit.variable} antialiased`}
+        className={`${lato.variable} ${knewave.variable} ${outfit.variable} ${space_mono.variable} antialiased`}
       >
         <div className="layout">
           <SamBakerLogo />

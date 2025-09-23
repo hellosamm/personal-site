@@ -1,29 +1,48 @@
+.main {
+  display: grid;
+  place-items: center;
+  align-items:;
+}
+
 .about {
   /* margin-bottom: 1rem; */
   max-width: 800px;
   min-width: 300px;
   /* margin: 0 auto;  */
-  padding-left: 5rem;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .about {
     margin-left: 18rem;
   }
-}
+} */
 
-.about p {
-  margin-bottom: 1rem;
+.details {
+  font-size: 1.1rem;
+  margin-top: 0.25rem;
 }
 
 .about h1 {
   font-family: outfit;
   font-size: 45px;
   font-weight: 500;
+  line-height: 1.25;
+}
+
+.tagline {
+  margin-top: 1.5rem;
+  font-family: outfit;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.25;
 }
 
 .about h2 {
-  font-weight: 550;
+  font-family: var(--font-spacemono);
+  /* font-style: italic; */
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.25;
 }
 
 .section {
@@ -40,16 +59,63 @@
   text-decoration: underline;
 }
 
+.allTopics {
+  margin-top: 6rem;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.topic {
+  margin-bottom: 2rem;
+}
+
+.topic.mostRecent {
+  grid-column: span 6;
+}
+
+.topic.thinkingAbout {
+  grid-column: span 6;
+}
+
+.topic.whatImDoing {
+  grid-column: 1 / -1; /* spans full width below */
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: default;
+  white-space: nowrap;
+  background: #a3bd31;
+  border: solid 2px;
+  border-color: #a3bd31;
+}
+
+.tag:hover {
+  border-color: #89a120;
+  border: solid 2px;
+  background: white;
+  color: #89a120;
+  cursor: pointer;
+}
+
+.playlist {
+  background: #a3bd31;
+  grid-column: 1 / -1; /* spans full width below */
+}
+
 .container {
 }
 
 .sidebar {
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: ;
 }
 
 .btnContainer {
@@ -103,6 +169,14 @@
 .drawnLine {
   width: 50%;
   height: auto;
+  justify-self: center;
   /* margin-left: 10rem; */
   margin-top: 3rem;
+}
+
+.dottedLine {
+  border-bottom: 4px dotted #000; /* dotted line */
+  width: 100px; /* length */
+  margin: 1rem 0;
+  justify-self: stretch;
 }

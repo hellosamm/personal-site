@@ -8,15 +8,17 @@
 
 .projectCard {
   border: solid;
+  border-width: 3.5;
   padding: 1rem;
   border-radius: 20px;
   min-width: 300px;
   max-width: 400px;
+  border-color: var(--border-color);
 }
 
 .projectCard:hover {
   /* transform: translateY(-1px); */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 8px 10px 0 var(--shadow-color);
 }
 
 /* .projectCard:nth-child(1):hover {
@@ -37,6 +39,7 @@
 }
 
 .title {
+  font-family: var(--font-spacemono);
   font-size: 40px;
   line-height: 1.1;
   margin-bottom: 1rem;
@@ -51,8 +54,9 @@
   transition: all 0.3s ease;
 }
 
-.details p {
+.details {
   font-size: 1.1rem;
+  font-family: var(--font-spacemono);
   /* font-weight: 500; */
   color: #000;
 }
@@ -66,7 +70,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .languageTag {
