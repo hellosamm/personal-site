@@ -15,17 +15,6 @@ const OnMyMind = async () => {
 
   return (
     <div className={style.main}>
-      <div className={style.sidebar}>
-        {/* <div className="side-logo">
-          <OnMyMind2Btn />
-          <img
-            src="/hand-drawn-circle.svg"
-            className={style.circle}
-            width={300}
-          />
-          <h2 className={style.h2}>on my mind</h2>
-        </div> */}
-      </div>
       <div>
         {posts.map((post) => (
           <article key={post.slug} className={style.articleCard}>

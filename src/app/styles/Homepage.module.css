@@ -1,7 +1,7 @@
 .main {
   display: grid;
   place-items: center;
-  align-items:;
+  margin-top: 7rem;
 }
 
 .about {
