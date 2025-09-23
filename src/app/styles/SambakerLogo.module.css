@@ -59,24 +59,3 @@
     transform: rotate(360deg);
   }
 }
-
-.fullContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 95%;
-}
-
-.menu {
-  display: flex;
-  gap: 6rem;
-}
-
-.menu a {
-  white-space: nowrap;
-  font-size: 1.2rem;
-}
-
-.menu a:hover {
-  text-decoration: underline;
-}

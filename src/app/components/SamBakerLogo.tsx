@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "../styles/SambakerLogo.module.css";
+import style from "../styles/SambakerLogo.module.css";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -10,19 +10,19 @@ const SamBakerLogo: React.FC = () => {
   const router = useRouter();
 
   return (
-    <div className={styles.fullContainer}>
+    <div>
       <div
-        className={styles.logoContainer}
+        className={style.logoContainer}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={() => router.push("/")}
       >
-        <div className={styles.logoContent}>
+        <div className={style.logoContent}>
           <img
             src="/spin-star.svg"
             alt="star"
-            className={`${styles.star} ${styles.spinStar} ${
-              isHovered ? styles.rotate : ""
+            className={`${style.star} ${style.spinStar} ${
+              isHovered ? style.rotate : ""
             }`}
             width="40"
             height="40"
@@ -30,11 +30,11 @@ const SamBakerLogo: React.FC = () => {
           <img
             src="/right-star.svg"
             alt="star"
-            className={`${styles.fourPointStar} ${styles.rightStar}`}
+            className={`${style.fourPointStar} ${style.rightStar}`}
             width="28"
             height="28"
           />
-          <h1 className={styles.logoText}>
+          <h1 className={style.logoText}>
             SAM
             <br />
             BAKER
@@ -42,16 +42,11 @@ const SamBakerLogo: React.FC = () => {
           <img
             src="/bottom-left-star.svg"
             alt="star"
-            className={`${styles.fourPointStar} ${styles.bottomLeftStar}`}
+            className={`${style.fourPointStar} ${style.bottomLeftStar}`}
             width="24"
             height="24"
           />
         </div>
-      </div>
-      <div className={styles.menu}>
-        <Link href="/coding-projects">coding</Link>
-        <Link href="/on-my-mind">on my mind</Link>
-        <Link href="/contact">contact</Link>
       </div>
     </div>
   );

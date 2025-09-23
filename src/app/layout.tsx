@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
-import { Knewave, Lato, Outfit, Space_Mono } from "next/font/google";
+import {
+  Covered_By_Your_Grace,
+  Knewave,
+  Lato,
+  Nerko_One,
+  Outfit,
+  Space_Mono,
+} from "next/font/google";
 import "./globals.css";
-import SamBakerLogo from "./components/SamBakerLogo";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -29,6 +36,18 @@ const space_mono = Space_Mono({
   subsets: ["latin"],
 });
 
+const covered_by_your_grace = Covered_By_Your_Grace({
+  weight: ["400"],
+  variable: "--font-covered",
+  subsets: ["latin"],
+});
+
+const nerko_one = Nerko_One({
+  weight: ["400"],
+  variable: "--font-nerko",
+  subsets: ["latin"],
+});
+
 // const geistMono = Geist_Mono({
 //   variable: "--font-geist-mono",
 //   subsets: ["latin"],
@@ -47,10 +66,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lato.variable} ${knewave.variable} ${outfit.variable} ${space_mono.variable} antialiased`}
+        className={`${lato.variable} ${knewave.variable} ${outfit.variable} ${space_mono.variable} ${covered_by_your_grace.variable} ${nerko_one.variable}`}
       >
         <div className="layout">
-          <SamBakerLogo />
+          <Header />
           <main> {children}</main>
           <div className="footer">
             <Footer />
