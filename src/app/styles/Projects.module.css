@@ -8,7 +8,7 @@
 
 .projectCard {
   border: solid;
-  border-width: 3.5;
+  border-width: 3.5px;
   padding: 1rem;
   border-radius: 20px;
   min-width: 300px;

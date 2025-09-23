@@ -212,10 +212,12 @@ const Projects = () => {
         <div
           key={index}
           className={style.projectCard}
-          style={{
-            "--border-color": project.s,
-            "--shadow-color": project.titleColor,
-          }}
+          style={
+            {
+              "--border-color": project.titleColor,
+              "--shadow-color": project.titleColor,
+            } as React.CSSProperties
+          }
         >
           <div
             className={style.title}
