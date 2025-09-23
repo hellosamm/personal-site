@@ -8,8 +8,8 @@
 
 .menu {
   font-family: var(--font-spacemono);
-
-  font-weight: 600;
+  text-decoration: underline;
+  font-weight: 400;
   display: flex;
   gap: 6rem;
 }
