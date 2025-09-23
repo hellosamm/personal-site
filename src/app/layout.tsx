@@ -71,9 +71,8 @@ export default function RootLayout({
         <div className="layout">
           <Header />
           <main> {children}</main>
-          <div className="footer">
-            <Footer />
-          </div>
+
+          <Footer />
         </div>
         <Analytics />
       </body>

@@ -49,13 +49,6 @@ article ul,
   margin: 1rem 0;
 }
 
-.footer {
-  padding: 2rem;
-  background-color: #fff;
-  text-align: start;
-  font-size: 0.9rem;
-}
-
 .layout {
   display: flex;
   flex-direction: column;
