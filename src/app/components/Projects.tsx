@@ -179,8 +179,10 @@ const Projects = () => {
     },
     {
       title: "PERSONAL SITE",
-      description: `A personal portfolio site to showcase my work, experiment with frontend techniques, and have fun learning more about web development. I also included a space to share things I’m thinking about and highlight my hobbies and interests outside of work. `,
-      languages: ["TypeScript", "Next.js", "Vercel"],
+      description: `A personal portfolio site to showcase my work, experiment with frontend techniques, and share what inspires me beyond coding.
+      
+      Built with Next.js (App Router) and deployed on Vercel, the site features a Resend-powered contact form and interactive, responsive components that showcase modern frontend techniques.`,
+      languages: ["TypeScript", "Next.js", "Vercel", "Resend"],
       github: "https://github.com/hellosamm/personal-site",
       deployed: "https://www.sammbakerr.com/",
       btnText: "You Are Here",
