@@ -2,7 +2,8 @@ import React from "react";
 import { getOnMyMindPosts, getPostData } from "@/lib/posts";
 import style from "../styles/AllArticles.module.css";
 import { formatDate } from "@/lib/date";
-import OnMyMind2Btn from "../components/OnMyMind2Btn";
+import DateArchive from "../components/DateArchive";
+import { buildArchive } from "@/lib/archive";
 
 const OnMyMind = async () => {
   const postsMetaData = getOnMyMindPosts();
@@ -13,8 +14,12 @@ const OnMyMind = async () => {
 
   posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
+  const archive = buildArchive(posts);
+
   return (
     <div className={style.main}>
+      {/* <DateArchive archive={archive} /> */}
+
       <div>
         {posts.map((post) => (
           <article key={post.slug} className={style.articleCard}>
