@@ -16,6 +16,36 @@
   display: flex;
 }
 
+.iconWrapper {
+  /* background: white;
+  border-radius: 50%; */
+
+  position: relative;
+  display: inline-flex;
+  background: white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.iconWrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* shorthand for top/right/bottom/left: 0 */
+  border-radius: 50%;
+  background: #e3b3fc;
+  transform: scale(0); /* start hidden */
+  transition: transform 0.3s ease; /* ease in & out */
+  z-index: 0; /* sits behind the icon */
+}
+
 .icon {
+  /* padding: 0.75rem; */
+
+  position: relative;
+  z-index: 1; /* keep the icon above the background */
   padding: 0.75rem;
+}
+
+.iconWrapper:hover::after {
+  transform: scale(1); /* expand the circle on hover */
 }
