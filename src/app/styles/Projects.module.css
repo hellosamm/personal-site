@@ -21,18 +21,12 @@
   box-shadow: 8px 10px 0 var(--shadow-color);
 }
 
-/* .projectCard:nth-child(1):hover {
-  cursor: zoom-in; 
+@media (max-width: 768px) {
+  .projectsContainer {
+    width: 80%;
+    /* margin: 0 auto; */
+  }
 }
-.projectContainer:nth-child(2):hover {
-  cursor: crosshair; 
-}
-.projectContainer:nth-child(3):hover {
-  cursor: grab; 
-}
-.projectContainer:nth-child(4):hover {
-  cursor: zoom-in;
-} */
 
 .expandBtn {
   font-size: 50px;
