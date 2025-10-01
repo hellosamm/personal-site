@@ -7,6 +7,14 @@
   margin-left: 7rem;
 }
 
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 .contactContainer {
   max-width: 800px;
   min-width: 300px;

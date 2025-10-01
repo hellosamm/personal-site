@@ -18,6 +18,14 @@
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 .header {
   margin-bottom: 1.5rem;
 }

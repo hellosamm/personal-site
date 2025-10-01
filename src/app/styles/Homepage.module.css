@@ -3,6 +3,14 @@
   place-items: center;
 }
 
+@media (max-width: 768px) {
+  .main {
+    /* display: flex; */
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 .about {
   /* margin-bottom: 1rem; */
   max-width: 800px;

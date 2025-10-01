@@ -6,7 +6,7 @@
   margin: 0 auto 5rem auto;
 }
 
-.menu {
+.menuDesktop {
   font-family: var(--font-spacemono);
   text-decoration: underline;
   font-weight: 400;
@@ -14,11 +14,17 @@
   gap: 6rem;
 }
 
-.menu a {
+.menuDesktop a {
   white-space: nowrap;
   font-size: 1.2rem;
 }
 
-.menu a:hover {
+.menuDesktop a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .menuDesktop {
+    display: none;
+  }
 }
